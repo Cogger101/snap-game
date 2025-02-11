@@ -20,7 +20,11 @@ public class CardGame {
             }
         }
     }
-
+    public void getDeck(){
+        for (Card card: deckOfCards){
+            System.out.println(card);
+        }
+    }
 
 
 }
