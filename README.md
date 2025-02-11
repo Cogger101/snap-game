@@ -46,3 +46,6 @@ Create a Player class and enable the snap game to be two players, with the users
     - [ ] If card match when player enters 'Snap' display winning message
     - [ ] If no cards match, display 'draw' message
     - [ ] Restart game
+
+## Installation and SetUp
+
