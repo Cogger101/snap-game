@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class CardGame {
-    public ArrayList<Card> deckOfCards;
+    private final ArrayList<Card> deckOfCards;
 
     public CardGame(){
         deckOfCards = new ArrayList<>();
@@ -9,7 +9,7 @@ public class CardGame {
     }
 
     private void createDeck(){
-        String[] suits = {"hearts", "clubs", "diamonds", "spades" };
+        String[] suits = {"Hearts", "Clubs", "Diamonds", "Spades" };
         String[] symbols = {"2", "3", "4", "5", "6", "7","8", "9", "10", "J", "Q", "K", "A"};
         int[] values = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14};
 
