@@ -4,7 +4,8 @@ public class Main {
         CardGame game = new CardGame("Snap");
 //        game.getDeck();
 //        game.dealCard();
-        System.out.println(game.sortDeckInNumberOrder());
-        System.out.println(game.sortDeckIntoSuits());
+//        System.out.println(game.sortDeckInNumberOrder());
+//        System.out.println(game.sortDeckIntoSuits());
+        System.out.println(game.shuffleDeck());
     }
 }
