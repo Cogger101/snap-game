@@ -14,7 +14,7 @@ public class CardGame {
     }
 
     private void createDeck(){
-        String[] suits = {"\u2661", "\u2662", "\u2660", "\u2663" }; // Unicode for Hearts, Diamonds, Spades and Clubs
+        String[] suits = {"♡", "♢", "♠", "♣" }; // Unicode for Hearts, Diamonds, Spades and Clubs
         String[] symbols = {"2", "3", "4", "5", "6", "7","8", "9", "10", "J", "Q", "K", "A"};
         int[] values = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14};
 
@@ -48,11 +48,13 @@ public class CardGame {
 
         public List<Card> sortDeckIntoSuits(){
         deckOfCards.sort((a,b)-> a.getSuit().compareTo(b.getSuit()));
+//            System.out.println(deckOfCards);
         return deckOfCards;
         }
 
         public List<Card> shuffleDeck(){
           Collections.shuffle(deckOfCards);
+
             return deckOfCards;
         }
 

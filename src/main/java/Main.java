@@ -2,10 +2,13 @@ public class Main {
     public static void main(String[] args) {
 
         CardGame game = new CardGame("Snap");
-//        game.getDeck();
-//        game.dealCard();
-//        System.out.println(game.sortDeckInNumberOrder());
-//        System.out.println(game.sortDeckIntoSuits());
-        System.out.println(game.shuffleDeck());
+        game.getDeck();
+//      game.shuffleDeck();
+//      game.dealCard();
+//       System.out.println("number order->");
+//        System.out.println("sorted into numbers" + game.sortDeckInNumberOrder());
+//        System.out.println("sorted into suits" + game.sortDeckIntoSuits());
+//        System.out.println("shuffled->" + game.shuffleDeck());
+
     }
 }

@@ -23,7 +23,7 @@ Let's get some core functionality to our CardGame by implementing the following 
 [x] Card dealCard() - Takes the card from the top of the deck and returns it.
 [x] ArrayList<Card> sortDeckInNumberOrder() - Sorts the deck in number order (e.g. 2222333344445555 etc) and stores the new shuffled deck back into the deckOfCards attribute.
 [x] ArrayList<Card> sortDeckIntoSuits() - Sorts the deck into suits (2,3,4,5,6,7,8,9,10,J,Q,K,A of hearts, then 2,3,4,5,6,7,8,9,10,J,Q,K,A of clubs etc.) and stores the new shuffled deck back into the deckOfCards attribute.
-[] ArrayList<Card> shuffleDeck() - Shuffles the deck into a random order and stores the new shuffled deck back into the deckOfCards attribute.
+[x] ArrayList<Card> shuffleDeck() - Shuffles the deck into a random order and stores the new shuffled deck back into the deckOfCards attribute.
 
 ### Stage 3
 Create a class for Snap that extends CardGame. This class should use the methods defined above, as well as some new ones, to enable the user to play the game snap according to the following rules:
