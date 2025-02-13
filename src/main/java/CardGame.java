@@ -1,15 +1,19 @@
 import java.util.ArrayList;
+import java.util.List;
+
 
 public class CardGame {
     private final ArrayList<Card> deckOfCards;
+    private String name;
 
-    public CardGame(){
+    public CardGame(String name){
+        this.name = name;
         deckOfCards = new ArrayList<>();
         createDeck();
     }
 
     private void createDeck(){
-        String[] suits = {"Hearts", "Clubs", "Diamonds", "Spades" };
+        String[] suits = {"\u2661", "\u2662", "\u2660", "\u2663" }; // Unicode for Hearts, Diamonds, Spades and Clubs
         String[] symbols = {"2", "3", "4", "5", "6", "7","8", "9", "10", "J", "Q", "K", "A"};
         int[] values = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14};
 
@@ -24,7 +28,27 @@ public class CardGame {
         for (Card card: deckOfCards){
             System.out.println(card);
         }
-    }
+    };
+
+    public Card dealCard(){
+        if (deckOfCards.isEmpty()){
+            System.out.println("The deck is empty!");
+            return null;
+        }
+        System.out.println("first card in the deck ==>" + deckOfCards.removeFirst());
+         return deckOfCards.removeFirst();
+        }
+
+
+        public List<Card> sortDeckInNumberOrder(){
+        deckOfCards.sort((a,b) -> a.getValue() - b.getValue());
+        return deckOfCards;
+        }
+
+        public List<Card> sortDeckIntoSuits(){
+        deckOfCards.sort((a,b)-> a.getSuit().compareTo(b.getSuit()));
+        return deckOfCards;
+        }
 
 
 }
