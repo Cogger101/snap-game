@@ -27,8 +27,8 @@ Let's get some core functionality to our CardGame by implementing the following 
 
 ### Stage 3
 Create a class for Snap that extends CardGame. This class should use the methods defined above, as well as some new ones, to enable the user to play the game snap according to the following rules:</br>
-[] By pressing enter in the command line, the user takes their turn.</br>
-[] Each turn, a new card is dealt from the deck.</br>
+[x] By pressing enter in the command line, the user takes their turn.</br>
+[x] Each turn, a new card is dealt from the deck.</br>
 [] The game continues until two cards in a row have the same symbol, at which point the “player” wins and the game ends.</br>
 
 ### Stage 4
