@@ -4,16 +4,6 @@ public class Main {
         Snap game = new Snap("Snap");
         game.initialiseGame();
         game.playGame();
-//        game.getDeck();
-//        game.getDeck();
-//      game.shuffleDeck();
-//      game.dealCard();
-//      game.dealCard();
-//      game.dealCard();
-//       System.out.println("number order->");
-//        System.out.println("sorted into numbers" + game.sortDeckInNumberOrder());
-//        System.out.println("sorted into suits" + game.sortDeckIntoSuits());
-//        System.out.println("shuffled->" + game.shuffleDeck());
 
     }
 }
