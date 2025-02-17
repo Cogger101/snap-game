@@ -1,19 +1,22 @@
 public class Player {
-    private Player player1;
-    private Player player2;
+
     private String name;
-    private String turn;
+    private boolean turn;
 
     public Player(String name) {
         this.name = name;
-        this.turn = turn;
+        this.turn = false;
     }
 
     public String getName() {
         return name;
     }
 
-    public String setTurn(String turn) {
+    public boolean isTurn() {
+        return turn;
+    }
+
+    public void setTurn(boolean turn) {
         this.turn = turn;
     }
 }
