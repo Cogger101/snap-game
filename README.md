@@ -21,6 +21,25 @@ If you would like the download the game and play locally please follow the below
 6. - Right click on main and scroll until you find 'Run Main.main()' -> click to run application. </br>
    - You can alternatively click on the <img src=img.png alt="play button img" width="10" height="10"> to run the game in the terminal.
 
+## ♠️ How to play ♥️
+
+- Once in the terminal each player will be prompted for their names
+- Player iput your name and press enter
+- Player two input your name and press enter
+- Game will start
+- You will be ask if you'd like to shuffle your deck - for best game player input yes and press enter
+- Once your deck is shuffled, each player will press enter to draw a new card
+- When 2 cards match you will have 2 seconds to type snap. 
+- If you type snap in time you WIN the game otherwise the game will continue until another opportunity arises to type 'Snap'
+- If the 52 card deck runs out the game will end
+
+## 🛠️Prerequisites
+
+- Java JDK 8 or higher
+- Maven (for dependency management)
+- Git (for cloning the repository)
+- Intellij (for development - recommended)
+
 ## 🛠️Project Breakdown and stages
 
 ### Stage 1
