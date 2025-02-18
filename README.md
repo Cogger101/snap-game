@@ -31,7 +31,7 @@ If you would like the download the game and play locally please follow the below
 - Once your deck is shuffled, each player will press enter to draw a new card
 - When 2 cards match you will have 2 seconds to type snap. 
 - If you type snap in time you WIN the game otherwise the game will continue until another opportunity arises to type 'Snap'
-- If the 52 card deck runs out the game will end
+- If the 52 card deck runs out or a player wins, you will be asked if you would like to play again (yes/no)
 
 ## 🛠️Prerequisites
 

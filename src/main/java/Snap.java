@@ -39,7 +39,7 @@ boolean cardMatchChanceToWin;
     }
 
     public void playGame() {
-//        Snap newGame = new Snap("Phil");
+    initialiseGame();
     playerOne.setTurn(true);
         while (!getDeckOfCards().isEmpty()) {
             Player currentPlayer = playerOne.isTurn() ? playerOne : playerTwo;
@@ -59,9 +59,10 @@ boolean cardMatchChanceToWin;
             String input = keyboard.nextLine();
             if (input.equalsIgnoreCase("snap") && cardMatchChanceToWin){
                 System.out.println(currentPlayer.getName().toUpperCase() + " WINS!");
+                timer.cancel();
             break;
             } else {
-                System.out.println("Too slow or No matches for Snapping");
+                System.out.println("Too slow or No matches for Snap");
 
             }
             cardMatchChanceToWin = false;
@@ -72,7 +73,7 @@ boolean cardMatchChanceToWin;
             playerOne.setTurn(!playerOne.isTurn());
             playerTwo.setTurn(!playerTwo.isTurn());
         }
-            keyboard.close();
+
         System.out.println("GAME OVER!");
     }
 
@@ -94,7 +95,14 @@ boolean cardMatchChanceToWin;
      }
         return false;
     }
-
+    public void resetGame(){
+        getDeckOfCards().clear();
+        lastCard = null;
+        prevCard = null;
+        cardMatchChanceToWin = false;
+        timer.cancel();
+        timer = new Timer();
+    }
 
 }
 
