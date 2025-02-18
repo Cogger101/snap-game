@@ -24,10 +24,10 @@ If you would like the download the game and play locally please follow the below
 ## ♠️ How to play ♥️
 
 - Once in the terminal each player will be prompted for their names
-- Player iput your name and press enter
+- Player input your name and press enter
 - Player two input your name and press enter
 - Game will start
-- You will be ask if you'd like to shuffle your deck - for best game player input yes and press enter
+- You will be asked if you'd like to shuffle your deck (yes/no) - for best game player input yes and press enter
 - Once your deck is shuffled, each player will press enter to draw a new card
 - When 2 cards match you will have 2 seconds to type snap. 
 - If you type snap in time you WIN the game otherwise the game will continue until another opportunity arises to type 'Snap'
